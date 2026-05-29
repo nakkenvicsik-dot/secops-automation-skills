@@ -1,0 +1,17 @@
+{
+  "skill_name": "network_compliance_audit",
+  "version": "1.0.0",
+  "description": "Standardized workflow for microservice topology validation",
+  "guardrails": {
+    "require_manual_approval": true,
+    "log_telemetry": true
+  },
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "check_protocol_version",
+      "target": "internal_gateway",
+      "expected_response": "TLS_1.3"
+    }
+  ]
+}
